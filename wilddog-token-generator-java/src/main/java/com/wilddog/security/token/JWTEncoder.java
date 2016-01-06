@@ -31,6 +31,8 @@ public class JWTEncoder {
         String encodedHeader = getCommonHeader();
         String encodedClaims = encodeJson(claims);
        String s = "";
+       String s1="";
+       String s2="";
         String secureBits = new StringBuilder(encodedHeader).append(TOKEN_SEP).append(encodedClaims).toString();
 
         String sig = sign(secret, secureBits);
