@@ -22,6 +22,7 @@ public class JWTEncoder {
 
     String s3 ="";
     String s1;
+    String s4;
 
 
 
