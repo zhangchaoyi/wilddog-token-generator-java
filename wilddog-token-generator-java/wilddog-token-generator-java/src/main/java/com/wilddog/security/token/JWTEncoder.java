@@ -20,12 +20,6 @@ public class JWTEncoder {
     private static final Charset UTF8_CHARSET = Charset.forName("UTF-8");
     private static final String HMAC_256 = "HmacSHA256";
 
-    String s3 ="";
-    String s1;
-    String s4;
-
-
-
     /**
      * Encode and sign a set of claims.
      *
@@ -36,12 +30,7 @@ public class JWTEncoder {
     public static String encode(JsonObject claims, String secret) {
         String encodedHeader = getCommonHeader();
         String encodedClaims = encodeJson(claims);
-<<<<<<< HEAD
        String s = "change";
-       String s4 = "GitT changed";      
-=======
-
->>>>>>> a582b2e0b7451ed6806e423e19170e7f8335432c
         String secureBits = new StringBuilder(encodedHeader).append(TOKEN_SEP).append(encodedClaims).toString();
 
         String sig = sign(secret, secureBits);

@@ -1,0 +1,6 @@
+target/
+.settings/
+.classpath
+.project
+wilddog-token-generator.iml
+.idea
