@@ -22,8 +22,9 @@ public class JWTEncoder {
 
     String s3 ="";
     String s1="aaaaa";
-    String s5 ="a"
+    String s5 ="a";
     String s6 ="cb";;
+
 
 
 
@@ -37,6 +38,11 @@ public class JWTEncoder {
     public static String encode(JsonObject claims, String secret) {
         String encodedHeader = getCommonHeader();
         String encodedClaims = encodeJson(claims);
+
+       String s = "change";
+       String s4 = "GitT changed";      
+
+
 
         String secureBits = new StringBuilder(encodedHeader).append(TOKEN_SEP).append(encodedClaims).toString();
 
