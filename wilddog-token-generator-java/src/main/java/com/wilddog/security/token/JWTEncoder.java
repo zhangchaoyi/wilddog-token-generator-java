@@ -30,12 +30,7 @@ public class JWTEncoder {
     public static String encode(JsonObject claims, String secret) {
         String encodedHeader = getCommonHeader();
         String encodedClaims = encodeJson(claims);
-       String s = "";
-       String s1="";
-       String s2="";
-       String s3="";
-       String s4="";
-       String s5 ="";
+       String s = "change";
         String secureBits = new StringBuilder(encodedHeader).append(TOKEN_SEP).append(encodedClaims).toString();
 
         String sig = sign(secret, secureBits);
