@@ -21,9 +21,12 @@ public class JWTEncoder {
     private static final String HMAC_256 = "HmacSHA256";
 
     String s3 ="";
-    String s1="hello";
-    String s4;
 
+    String s1="hello";
+
+    String s4;
+  String s2="";
+ 
 
 
     /**
@@ -36,6 +39,11 @@ public class JWTEncoder {
     public static String encode(JsonObject claims, String secret) {
         String encodedHeader = getCommonHeader();
         String encodedClaims = encodeJson(claims);
+
+       String s = "change";
+       String s4 = "GitT changed";      
+
+
 
         String secureBits = new StringBuilder(encodedHeader).append(TOKEN_SEP).append(encodedClaims).toString();
 
