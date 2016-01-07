@@ -20,6 +20,7 @@ public class JWTEncoder {
     private static final Charset UTF8_CHARSET = Charset.forName("UTF-8");
     private static final String HMAC_256 = "HmacSHA256";
     String s ="";
+    String s1;
     /**
      * Encode and sign a set of claims.
      *
