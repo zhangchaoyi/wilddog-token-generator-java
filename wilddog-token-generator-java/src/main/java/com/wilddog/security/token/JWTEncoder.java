@@ -21,7 +21,7 @@ public class JWTEncoder {
     private static final String HMAC_256 = "HmacSHA256";
 
     String s3 ="";
-    String s1;
+    String s1="hello";
     String s4;
 
 
